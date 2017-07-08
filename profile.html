@@ -5,9 +5,12 @@
         <meta charset="UTF-8">
         <meta description="Instaclone login page">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <nav class="navigation">
+            <span class="navigation__wrapper">
             <div class="navigation__column">
                 <a href="feed.html">
                     <img src="images/logo.png" />
@@ -28,9 +31,19 @@
                     <i class="fa fa-user-o"></i>
                 </a>
             </div>
+            </span>
         </nav>
         <main class="profile">
-            <header class="profile__header">                
+            <header class="profile__header">
+                <!-- 
+                    1) Make two columns -DONE
+                    2) First column has an image -DONE
+                    3) Second one has three boxes
+                        3.1) First box has h2 <a> and <i> -DONE
+                        3.2) Second box is a list (ul>li) -DONE
+                        3.3) Third box is a <p> with a <span> and a <a> inside
+                -->
+                
                 <img src="images/avatar.jpg" alt="" class="profile__avatar">
                 <div class="profile__info">
                     <div class="profile__name">
@@ -57,44 +70,19 @@
             <div class="profile__images">
                 <div class="profile__image-row">
                     <div class="profile__row-image-container">
-                    	<a href="image-detail.html">
-                        <img src="images/feedPhoto.jpg" class="profile__row-image">
-                        <div class="profile__row-image-overlay">
-                            <span class="profile__row-image-stat">
-                                <i class="fa fa-heart fa-lg"></i>
-                                239
-                            </span>
-                            <span class="profile__row-image-stat">
-                                <i class="fa fa-comment fa-lg"></i>
-                                450
-                            </span>
-                        </div>
-                    </div>
-                    <div class="profile__row-image-container">
-                        <img src="images/feedPhoto.jpg" class="profile__row-image">
-                        <div class="profile__row-image-overlay">
-                            <span class="profile__row-image-stat">
-                                <i class="fa fa-heart fa-lg"></i>
-                                239
-                            </span>
-                            <span class="profile__row-image-stat">
-                                <i class="fa fa-comment fa-lg"></i>
-                                450
-                            </span>
-                        </div>
-                    </div>
-                    <div class="profile__row-image-container">
-                        <img src="images/feedPhoto.jpg" class="profile__row-image">
-                        <div class="profile__row-image-overlay">
-                            <span class="profile__row-image-stat">
-                                <i class="fa fa-heart fa-lg"></i>
-                                239
-                            </span>
-                            <span class="profile__row-image-stat">
-                                <i class="fa fa-comment fa-lg"></i>
-                                450
-                            </span>
-                        </div>
+                        <a href="image-detail.html">
+                            <img src="images/feedPhoto.jpg" class="profile__row-image">
+                            <div class="profile__row-image-overlay">
+                                <span class="profile__row-image-stat">
+                                    <i class="fa fa-heart fa-lg"></i>
+                                    239
+                                </span>
+                                <span class="profile__row-image-stat">
+                                    <i class="fa fa-comment fa-lg"></i>
+                                    450
+                                </span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
